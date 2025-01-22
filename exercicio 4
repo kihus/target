@@ -1,0 +1,30 @@
+using System;
+
+
+class Program
+{
+	static void Main()
+	{
+		double sp = 67836.43, rj = 36678.66, mg = 29229.88, es = 27165.48, outros = 19849.53;
+		double soma, porcentagem;
+
+		soma = sp + rj + mg + es + outros;
+
+		porcentagem = (sp / soma) * 100;
+		Console.WriteLine($"Sao paulo tem {porcentagem.ToString("F2")}% de representacao");
+
+		porcentagem = (rj / soma) * 100;
+		Console.WriteLine($"Rio de Janeiro tem {porcentagem.ToString("F2")}% de representacao");
+
+		porcentagem = (mg / soma) * 100;
+		Console.WriteLine($"Minas Gerais tem {porcentagem.ToString("F2")}% de representacao");
+
+		porcentagem = (es / soma) * 100;
+		Console.WriteLine($"Espirito Santo tem {porcentagem.ToString("F2")}% de representacao");
+
+		porcentagem = (outros / soma) * 100;
+		Console.WriteLine($"Outros estados tem {porcentagem.ToString("F2")}% de representacao");
+
+	}
+}
+
